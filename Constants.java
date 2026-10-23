@@ -9,7 +9,7 @@ public final class Constants {
   public static final int[] STEER_IDS   = {2, 5, 8, 11};  // Kraken X60 steering (Talon FX)
   public static final int[] ENCODER_IDS = {3, 6, 9, 12};  // CANcoder
 
-  // CANcoder offsets in radians (calibrate: see notes)
+  // CANcoder offsets in radians 
   public static final double[] ENCODER_OFFSETS_RAD = {-2.732, -2.769, -1.137, 0.276};
 
   public static final double TRACK_WIDTH_M = Units.inchesToMeters(27.5); // left-right built in function on math import converts our measurment in inches to m
