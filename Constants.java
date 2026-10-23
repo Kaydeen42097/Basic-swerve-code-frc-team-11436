@@ -6,7 +6,7 @@ public final class Constants {
   //CAN IDs (set these in Phoenix Tuner X / REV Hardware Client)
   // Order: Front Left, Front Right, Back Left, Back Right
   public static final int[] DRIVE_IDS   = {1, 4, 7, 10};  // Kraken X60 drive (Talon FX)
-  public static final int[] STEER_IDS   = {2, 5, 8, 11};  // Kraken X60 steering (Talon FX)
+  public static final int[] STEER_IDS   = {2, 5, 8, 11};  // Kraken X40 steering (Talon FX)
   public static final int[] ENCODER_IDS = {3, 6, 9, 12};  // CANcoder
 
   // CANcoder offsets in radians 
