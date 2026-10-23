@@ -26,7 +26,7 @@ public final class Constants {
   public static final boolean STEER_INVERTED = true;
 
   // Limits (kept low for first tests) in meter per second
-  public static final double MAX_SPEED_MPS = 1.0; // increase after testing
+  public static final double MAX_SPEED_MPS = 0.5; // increase after testing
   public static final double MAX_ANGULAR_RAD_PER_SEC = Math.PI * 1.5;
   public static final double DRIVE_CURRENT_LIMIT_A = 60;
   public static final double STEER_CURRENT_LIMIT_A = 40;
