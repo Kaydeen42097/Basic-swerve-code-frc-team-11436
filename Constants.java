@@ -10,10 +10,10 @@ public final class Constants {
   public static final int[] ENCODER_IDS = {3, 6, 9, 12};  // CANcoder
 
   // CANcoder offsets in radians (calibrate: see notes)
-  public static final double[] ENCODER_OFFSETS_RAD = {0.0, 0.0, 0.0, 0.0};
+  public static final double[] ENCODER_OFFSETS_RAD = {-2.732, -2.769, -1.137, 0.276};
 
   //Module geometry (TODO: measure center-to-center of modules)
-  public static final double TRACK_WIDTH_M = Units.inchesToMeters(26.375); // left-right built in function on math import converts our measurment in inches to m
+  public static final double TRACK_WIDTH_M = Units.inchesToMeters(27.5); // left-right built in function on math import converts our measurment in inches to m
   public static final double WHEEL_BASE_M  = TRACK_WIDTH_M // forgot bot = square
 
   //  Wheel / gearing 
@@ -23,7 +23,7 @@ public final class Constants {
 
   //  Inversions (flip if a module drives backwards or steers the wrong way)
   public static final boolean DRIVE_INVERTED = false; 
-  public static final boolean STEER_INVERTED = false;
+  public static final boolean STEER_INVERTED = true;
 
   // Limits (kept low for first tests) in meter per second
   public static final double MAX_SPEED_MPS = 1.0; // increase after testing
@@ -34,5 +34,5 @@ public final class Constants {
   // Steering PID (runs on the roboRIO using the CANcoder angle) 
   public static final double STEER_KP = 0.4;
   public static final double STEER_KD = 0.0;
-  public static final double DEADBAND = 0.08;
+  public static final double DEADBAND = 0.15;
 }
