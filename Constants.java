@@ -12,7 +12,6 @@ public final class Constants {
   // CANcoder offsets in radians (calibrate: see notes)
   public static final double[] ENCODER_OFFSETS_RAD = {-2.732, -2.769, -1.137, 0.276};
 
-  //Module geometry (TODO: measure center-to-center of modules)
   public static final double TRACK_WIDTH_M = Units.inchesToMeters(27.5); // left-right built in function on math import converts our measurment in inches to m
   public static final double WHEEL_BASE_M  = TRACK_WIDTH_M // forgot bot = square
 
