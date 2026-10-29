@@ -33,6 +33,6 @@ public final class Constants {
 
   // Steering PID (runs on the roboRIO using the CANcoder angle) 
   public static final double STEER_KP = 0.4;
-  public static final double STEER_KD = 0.0
+  public static final double STEER_KD = 0.0;
   public static final double DEADBAND = 0.15;
 }
