@@ -22,7 +22,7 @@ public final class Constants {
   public static final double DRIVE_GEAR_RATIO = 6.03; // mk5n gear ration 
 
   //  Inversions (flip if a module drives backwards or steers the wrong way)
-  public static final boolean DRIVE_INVERTED = false; 
+  public static final boolean[] DRIVE_INVERTED = [true,false,true,false]; 
   public static final boolean STEER_INVERTED = true;
 
   // Limits (kept low for first tests) in meter per second
