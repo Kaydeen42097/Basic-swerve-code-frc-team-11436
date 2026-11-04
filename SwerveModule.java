@@ -23,7 +23,7 @@ public class SwerveModule {
   private final VoltageOut driveRequest = new VoltageOut(0);
   private final VoltageOut steerRequest = new VoltageOut(0);
 
-  public SwerveModule(int driveId, int steerId, int encoderId, double offsetRad) {
+  public SwerveModule(int driveId, int steerId, int encoderId, double offsetRad,boolean DRIVE_INVERTED) {
     this.offsetRad = offsetRad;
 
     drive = new TalonFX(driveId);
