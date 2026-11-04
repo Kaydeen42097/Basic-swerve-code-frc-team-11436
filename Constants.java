@@ -23,10 +23,10 @@ public final class Constants {
 
   //  Inversions (flip if a module drives backwards or steers the wrong way)
   public static final boolean[] DRIVE_INVERTED = [true,false,true,false]; 
-  public static final boolean STEER_INVERTED = true;
+  public static final boolean STEER_INVERTED = false;
 
   // Limits (kept low for first tests) in meter per second
-  public static final double MAX_SPEED_MPS = 0.5; // increase after testing
+  public static final double MAX_SPEED_MPS = 1; // increase after testing
   public static final double MAX_ANGULAR_RAD_PER_SEC = Math.PI * 1.5;
   public static final double DRIVE_CURRENT_LIMIT_A = 60;
   public static final double STEER_CURRENT_LIMIT_A = 40;
