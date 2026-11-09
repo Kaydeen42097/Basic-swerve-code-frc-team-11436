@@ -23,14 +23,14 @@ public class SwerveModule {
   private final VoltageOut driveRequest = new VoltageOut(0);
   private final VoltageOut steerRequest = new VoltageOut(0);
 
-  public SwerveModule(int driveId, int steerId, int encoderId, double offsetRad,boolean DRIVE_INVERTED) {
+public SwerveModule(int driveId, int steerId, int encoderId, double offsetRad, boolean driveInverted) {
     this.offsetRad = offsetRad;
 
     drive = new TalonFX(driveId);
     TalonFXConfiguration driveCfg = new TalonFXConfiguration();
     driveCfg.MotorOutput.NeutralMode = NeutralModeValue.Brake;
-    driveCfg.MotorOutput.Inverted = Constants.DRIVE_INVERTED
-        ? InvertedValue.Clockwise_Positive : InvertedValue.CounterClockwise_Positive;
+    driveCfg.MotorOutput.Inverted = driveInverted
+    ? InvertedValue.Clockwise_Positive : InvertedValue.CounterClockwise_Positive;
     driveCfg.CurrentLimits.SupplyCurrentLimit = Constants.DRIVE_CURRENT_LIMIT_A;
     driveCfg.CurrentLimits.SupplyCurrentLimitEnable = true;
     drive.getConfigurator().apply(driveCfg);
