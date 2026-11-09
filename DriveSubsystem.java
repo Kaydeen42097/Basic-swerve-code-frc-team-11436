@@ -31,7 +31,8 @@ public class DriveSubsystem extends SubsystemBase {
     for (int i = 0; i < 4; i++) {
       modules[i] = new SwerveModule(
           Constants.DRIVE_IDS[i], Constants.STEER_IDS[i],
-          Constants.ENCODER_IDS[i], Constants.ENCODER_OFFSETS_RAD[i]);
+          Constants.ENCODER_IDS[i], Constants.ENCODER_OFFSETS_RAD[i]),
+          Constants.DRIVE_INVERTED[i]);
     }
     odometry = new SwerveDriveOdometry(kinematics, gyro.getRotation2d(), getModulePositions());
     SmartDashboard.putData("Field", field);
